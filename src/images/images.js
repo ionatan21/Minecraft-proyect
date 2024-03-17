@@ -1,0 +1,5 @@
+export { default as grassImg } from '../images/grass.jpg'
+export { default as glassImg } from '../images/glass.png'
+export { default as dirtImg } from '../images/dirt.jpg'
+export { default as logImg } from '../images/log.jpg'
+export { default as woodImg } from '../images/wood.png'
