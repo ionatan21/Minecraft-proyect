@@ -32,23 +32,23 @@ export const useKeyboard = () => {
       const { code } = event;
       const action = ACTIONS_KEYBOARD[code];
       if (action) {
-        setActions(prevActions => ({
-            ...prevActions,
-            [action]: true
-        }))
+        setActions((prevActions) => ({
+          ...prevActions,
+          [action]: true,
+        }));
       }
     };
 
     const handleKeyUp = (event) => {
-        const { code } = event;
-        const action = ACTIONS_KEYBOARD[code];
-        if (action) {
-          setActions(prevActions => ({
-              ...prevActions,
-              [action]: false
-          }))
-        }
-      };
+      const { code } = event;
+      const action = ACTIONS_KEYBOARD[code];
+      if (action) {
+        setActions((prevActions) => ({
+          ...prevActions,
+          [action]: false,
+        }));
+      }
+    };
 
     document.addEventListener("keydown", handleKeyDown);
     document.addEventListener("keyup", handleKeyUp);
